@@ -1,2 +1,2 @@
 # Node.js
-Node.js self study &amp; Ref.
+Node.js / self-study &amp; Ref.
