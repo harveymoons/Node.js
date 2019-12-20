@@ -102,6 +102,24 @@ yarn add --dev nodemon
 (...)    
 ```
   
+###### install koa-router  
+```  
+yarn add koa-router  
+```
   
-  
-  
+###### example koa-router
+```js
+(...)
+const Router = new require("koa-router");
+const router = new Router();
+
+router.get("/", ctx => {
+  ctx.body = 'home'; 
+});
+router.get("/about", ctx => {
+  ctx.body = 'about'; 
+});
+
+app.use(router.routes());
+app.use(router.allowedMethods());
+```
