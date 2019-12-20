@@ -88,3 +88,20 @@ app.listen(4000, () => {
 ```sh
 node src # [/index.js]
 ```
+  
+###### install nodemon (server restart automatically when code has been changed )
+```
+yarn add --dev nodemon
+```
+  
+###### edit [package.json] file
+```json
+(...)
+"start": "node src",
+"start:dev": "nodemon --watch src/ src/index.js"
+(...)    
+```
+  
+  
+  
+  
