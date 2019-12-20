@@ -36,7 +36,7 @@ eslint --init # on project root directory
 ###### setup prettierrc
 - create .prettierrc on root directory
 ```json
-# .prettierrc
+// .prettierrc
 {
   "singleQuote": true,
   "semi": true,
@@ -49,7 +49,7 @@ eslint --init # on project root directory
   
 ###### create eslint-config-prettier
 ```sh
-# safe conflict between eslint-config to prettier-config
+# prevent conflict between eslint-config to prettier-config
 yarn add eslint-config-prettier
 ```
   
