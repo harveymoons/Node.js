@@ -1,6 +1,6 @@
 
 - window : https://nodejs.org/en/
 
-- mac : `brew install node`
+- mac (terminal) : `brew install node`
 
-- linux(CentOS 6+) : `yum install npm`
+- linux (CentOS 6+) : `yum install npm`
