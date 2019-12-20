@@ -70,7 +70,7 @@ cd src
 touch index.js
 ```
   
-###### type serve code
+###### type server code
 ```js
 const Koa = require('koa');
 const app = new Koa();
@@ -89,7 +89,7 @@ app.listen(4000, () => {
 node src # [/index.js]
 ```
   
-###### install nodemon (server restart automatically when code has been changed )
+###### install nodemon (server restart automatically when code has been changed)
 ```
 yarn add --dev nodemon
 ```
@@ -122,4 +122,17 @@ router.get("/about", ctx => {
 
 app.use(router.routes());
 app.use(router.allowedMethods());
+```
+  
+###### route parameter & query
+```js
+// route-parameter (value)
+router.get('/about/:name?', ctx => {
+  const { name } = ctx.params;
+});
+
+// router-query (key=value)
+router.get('/posts', ctx => {
+  const { id } = ctx.query;
+});
 ```
