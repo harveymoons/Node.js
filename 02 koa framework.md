@@ -136,3 +136,24 @@ router.get('/posts', ctx => {
   const { id } = ctx.query;
 });
 ```
+  
+###### install koa-bodyparser (parsing data to JSON data)
+```sh
+yarn add koa-bodyparser
+```
+  
+###### edit [src/index.js] file
+```js
+(...)
+const bodyParser = require("koa-bodyparser");
+
+// This code must be applied at first!!!
+app.use(bodyParser());
+
+// and then apply these
+app.use(router.routes());
+app.use(router.allowedMethods());
+```
+  
+  
+  
