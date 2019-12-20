@@ -33,9 +33,8 @@ eslint -v
 eslint --init # on project root directory
 ```
   
-###### setup prettierrc
+###### create [.prettierrc] file on root directory
 ```json
-// create [.prettierrc] file on root directory
 {
   "singleQuote": true,
   "semi": true,
@@ -57,6 +56,35 @@ yarn add eslint-config-prettier
 (...)
 "extends": ["eslint:recommended", "plugin:vue/essential", "prettier"],
 (...)
+"rules": {
+  "no-unused-vars": "warn",
+  "no-console": "warn"
+}
+(...)
 ```
   
+###### create src directory && index.js file
+```
+mkdir src
+cd src
+touch index.js
+```
   
+###### type serve code
+```js
+const Koa = require('koa');
+const app = new Koa();
+
+app.use(ctx => {
+    ctx.body = 'Hello Koa';
+});
+
+app.listen(4000, () => {
+    console.log('heurm server is listening to port 4000');
+});
+```
+  
+###### run server
+```sh
+node src # [/index.js]
+```
