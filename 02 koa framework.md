@@ -34,9 +34,8 @@ eslint --init # on project root directory
 ```
   
 ###### setup prettierrc
-- create .prettierrc on root directory
 ```json
-// .prettierrc
+// create [.prettierrc] file on root directory
 {
   "singleQuote": true,
   "semi": true,
