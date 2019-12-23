@@ -33,6 +33,8 @@ router.get('/posts', ctx => {
 });
 ```
   
+---
+  
 ###### install koa-bodyparser (parsing data to JSON data)
 ```sh
 yarn add koa-bodyparser
@@ -50,3 +52,6 @@ app.use(bodyParser());
 app.use(router.routes());
 app.use(router.allowedMethods());
 ```
+  
+---
+  
