@@ -89,6 +89,8 @@ app.listen(4000, () => {
 node src # [/index.js]
 ```
   
+---
+  
 ###### install nodemon (server restart automatically when code has been changed)
 ```
 yarn add --dev nodemon
