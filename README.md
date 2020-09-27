@@ -4,7 +4,7 @@
   
 ---
   
-###### check (for MacOS)
+## check (for MacOS)
 ```sh
 brew -v
 brew update  #[,sudo]
