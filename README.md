@@ -12,6 +12,6 @@ brew upgrade #[,sudo]
 
 node -v
 npm -v
-## if not yet install nodejs
 ```
-just go => [GitHub](http://github.com)
+- if not yet install nodejs
+- just go => [GitHub](http://github.com)
