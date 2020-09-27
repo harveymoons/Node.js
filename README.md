@@ -1,10 +1,10 @@
 ## Node.js
-- [Check](check)
-- [Install](install)
+- [Check](#check)
+- [Install](#install)
   
 ---
   
-## check (for MacOS)
+###### check (for MacOS)
 ```sh
 brew -v
 brew update  #[,sudo]
